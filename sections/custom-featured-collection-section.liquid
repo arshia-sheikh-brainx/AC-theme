@@ -46,7 +46,6 @@
             <a href="{{ block.settings.collection.url }}" class="link underlined-link large-up-hide">{{ 'sections.featured_collection.view_all' | t }}</a>
           {%- endif -%}
         </div>
-      
         <slider-component class="slider-mobile-gutter">
           <ul id="Slider-{{ block.id }}" class="grid grid--3-col product-grid{% if products_to_display ==6 or block.settings.collection == blank %} grid--2-col-tablet grid--3-col-desktop{% else %} grid--3-col-tablet{% endif %}{% if products_to_display > 6 %} grid--one-third-max grid--3-col-desktop grid--quarter-max{% endif %}{% if block.settings.collection.all_products_count > 3 and section.settings.swipe_on_mobile and section.settings.products_to_show > 3 %} slider slider--tablet grid--peek{% endif %}{% if section.settings.show_view_all == false or block.settings.collection.products.size < section.settings.products_to_show %} negative-margin{% endif %}{% if section.settings.show_view_all and block.settings.collection.products.size > section.settings.products_to_show %} negative-margin--small{% endif %}" role="list">
             {%- for product in block.settings.collection.products limit: section.settings.products_to_show -%}

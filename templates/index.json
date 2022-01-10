@@ -238,8 +238,7 @@
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
-    }
-   
+    } 
 },
   "order": [
     "image_banner",
