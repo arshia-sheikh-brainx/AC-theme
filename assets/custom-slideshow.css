@@ -1,0 +1,112 @@
+.slider-button--prev,
+.slider-button--next {
+  display: none !important;
+}
+.slideshow__controls {
+  position: absolute;
+  top: 20%;
+  right: 20px;
+  text-align: center;
+  transform: rotate(90deg);
+  z-index: 2;
+  border: none;
+}
+.slider-counter__link--dots .dot {
+  background-color: rgb(var(--color-foreground));
+  background: #fff;
+}
+.slideshow__text .banner-heading {
+  font-family: Cocogoose;
+  font-size: 49px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+
+  color: #fff;
+}
+.slideshow__text .banner__text span {
+  font-family: Cocogoose;
+  font-size: 27px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+
+  color: #000;
+}
+.fill-button {
+  font-family: Cocogoose;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+
+  color: #fff;
+  background-color: #0aa1bc;
+  box-shadow: none;
+}
+.banner__sub_text {
+  font-size: 38px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+
+  color: #fff;
+}
+.banner__sub_text span {
+  font-family: SitkaText;
+  font-size: 38px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+
+  color: #fff;
+}
+.banner__bottom_text {
+  font-size: 22px;
+  box-sizing: unset;
+  margin-left: 200px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+.slideshow__text-wrapper {
+  background-color: rgba(10, 10, 10, 0.1);
+}
+@media screen and (max-width: 1000px) {
+  .banner__bottom_text {
+    font-size: 22px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 749px) {
+  .slideshow__controls {
+    position: static;
+    transform: rotate(0deg);
+  }
+  .banner__bottom_text {
+    font-size: 16px;
+    margin-left: 0;
+  }
+  .banner__sub_text span {
+    line-height: 33px;
+  }
+  .banner__sub_text {
+    font-size: 31px;
+  }
+  .slideshow__text .banner-heading {
+    font-size: 33px !important;
+  }
+}

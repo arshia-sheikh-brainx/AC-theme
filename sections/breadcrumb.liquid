@@ -1,0 +1,42 @@
+{%- assign collection = product.collections | first-%}
+<style>
+    .breadcrumbs-container{
+   -webkit-backdrop-filter: blur(50px);
+     backdrop-filter: blur(50px);
+     background-color: #fafafa;
+     padding: 10px 0;
+    }
+    .breadcrumb {
+    max-width:1200px;
+    margin: 20px auto;
+
+     }
+    .breadcrumb a , .breadcrumb__link{
+        font-family: Cocogoose;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .breadcrumb a{
+        color: #5c5c5c;
+    }
+    .breadcrumb__link{
+        color: #000;
+    }
+    @media screen and (max-width:576px) {
+        .breadcrumb a , .breadcrumb__link{
+        font-size: 12px;
+    }
+        
+    }
+
+</style>
+<div class="breadcrumbs-container">
+    <nav aria-label="Home" class="breadcrumb">
+        <i class="fad fa-horizontal-rule"></i> 
+        <a class="Breadcrumbs" href="{{ routes.root_url }}">Home </a> /
+        <a class="Breadcrumbs" href="{{collection.url}}">   {{collection.title}} </a> /
+        <span class="breadcrumb__link" aria-current="page" style="font-weight:bold;"> {{ product.title}}</span>
+        </nav>    
+</div>
+
+
